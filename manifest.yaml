@@ -1,0 +1,27 @@
+name: rapidapi-product-search
+version: 0.1.0
+description: RapidAPI Real-Time Product Search plugin for Dify
+author: Nitin Srivastava
+email: nitin@velsof.com
+url: https://www.velsof.com
+icon: icon.svg
+labels:
+  - search
+  - shopping
+  - products
+  - ecommerce
+  - rapidapi
+tool_category: BROWSER
+type: tool
+meta: 
+  readme: README.md
+settings:
+  - name: rapid_api_key
+    type: secret
+    required: true
+    help: Your RapidAPI Key for the Real-Time Product Search API
+  - name: base_url
+    type: string
+    default: "https://real-time-product-search.p.rapidapi.com"
+    required: true
+    help: Base URL for the RapidAPI endpoint
